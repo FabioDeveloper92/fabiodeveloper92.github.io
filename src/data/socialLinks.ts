@@ -9,25 +9,25 @@ export interface SocialLink {
 export const socialLinks: SocialLink[] = [
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/fabio-rossi",
+    url: "https://it.linkedin.com/in/fabio-ramoni-a4712a146",
     icon: "linkedin",
     bgColor: "#0077B5"
   },
   {
     name: "GitHub",
-    url: "https://github.com/fabio-rossi",
+    url: "https://github.com/FabioDeveloper92",
     icon: "github",
     bgColor: "#171515"
   },
   {
-    name: "Twitter",
-    url: "https://twitter.com/fabio-rossi",
-    icon: "twitter",
+    name: "X",
+    url: "https://x.com/developer_fabio",
+    icon: "x",
     bgColor: "#1DA1F2"
   },
   {
     name: "Instagram",
-    url: "https://instagram.com/fabio-rossi",
+    url: "https://www.instagram.com/developer_fabio",
     icon: "instagram",
     bgColor: "#E4405F"
   }

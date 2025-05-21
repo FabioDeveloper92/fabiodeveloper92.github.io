@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Instagram, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { socialLinks } from "@/data/socialLinks";
 import { contactData } from "@/data/contactData";
@@ -16,6 +16,8 @@ const Contact = () => {
         return <Github size={18} />;
       case 'twitter':
         return <Twitter size={18} />;
+        case 'x':
+          return <X size={18} />;
       case 'instagram':
         return <Instagram size={18} />;
       default:

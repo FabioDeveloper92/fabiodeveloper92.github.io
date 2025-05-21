@@ -6,6 +6,6 @@ export const navLinks = [
   { nameKey: 'nav.cv', href: "/#resume" },
   { nameKey: 'nav.projects', href: "/#projects" },
   { nameKey: 'nav.contact', href: "/#contact" },
-  { nameKey: 'nav.blog', href: "https://yourblog.com", external: true },
+  { nameKey: 'nav.blog', href: "https://developerfabio.hashnode.dev/", external: true },
 ];
 

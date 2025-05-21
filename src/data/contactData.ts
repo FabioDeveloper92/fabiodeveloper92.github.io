@@ -9,10 +9,10 @@ export interface ContactInfo {
 }
 
 export const contactData: ContactInfo = {
-  email: "fabio@example.com",
-  phone: "+39 123 456 7890",
+  email: "fabramo92@gmail.com",
+  phone: "-",
   location: {
-    city: "Milano",
-    country: "Italia"
+    city: "Varese",
+    country: "Italy"
   }
 };

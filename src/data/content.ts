@@ -6,58 +6,28 @@ export const aboutContent = {
     en: "I'm a Software Developer with a passion for creating robust and elegant digital solutions. With several years of experience in web and application development, I dedicate myself to building software that solves real problems."
   },
   current: {
-    it: "Attualmente sto lavorando come sviluppatore presso Acme Tech Solutions, dove mi occupo di sviluppare applicazioni web enterprise utilizzando le più moderne tecnologie.",
-    en: "I'm currently working as a developer at Acme Tech Solutions, where I develop enterprise web applications using the most modern technologies."
+    it: "Attualmente lavoro in Mind3, dove mi occupo di turismo B2B, sviluppando soluzioni web innovative su misura per agenzie di viaggio, con l'obiettivo di facilitare e migliorare l'esperienza delle persone.",
+    en: "I currently work at Mind3, where I focus on B2B travel by developing innovative, tailor-made web solutions for travel agencies, aiming to simplify and enhance people's experiences."
   },
   goal: {
     it: "Il mio obiettivo è continuare a crescere professionalmente nel settore IT, lavorando a progetti stimolanti che mi permettano di evolvere come sviluppatore e un giorno avviare una mia impresa tecnologica.",
-    en: "My goal is to continue growing professionally in the IT sector, working on stimulating projects that allow me to evolve as a developer and one day start my own technology company."
+    en: "Il mio obiettivo è creare soluzioni digitali all'avanguardia che uniscano tecnologia e creatività, per aiutare aziende e persone a trasformare le loro idee in realtà tangibili, migliorando l'esperienza digitale e generando valore concreto."
   },
   personalInfo: {
-    name: "Fabio Rossi",
-    email: "fabio@example.com",
-    phone: "+39 123 456 7890",
+    name: "Fabio Ramoni",
+    email: "fabramo92@gmail.com",
+    phone: "-",
     availability: {
       it: "Disponibile per nuovi progetti",
       en: "Available for new projects"
     }
   },
   skills: [
-    "JavaScript", "TypeScript", "React", "Node.js", 
+    "JavaScript", "TypeScript", "React", "Angular", 
     "C#", "ASP.NET", ".NET Core", "SQL Server", 
-    "MongoDB", "HTML5", "CSS3", "Tailwind CSS",
-    "Git", "Docker", "Azure", "AWS"
+    "MongoDB", "HTML5", "CSS3", "Git"
   ],
-  skillLevels: [
-    { 
-      name: {
-        it: "Frontend Development",
-        en: "Frontend Development"
-      }, 
-      level: 90 
-    },
-    { 
-      name: {
-        it: "Backend Development",
-        en: "Backend Development"
-      }, 
-      level: 85 
-    },
-    { 
-      name: {
-        it: "Database Management",
-        en: "Database Management"
-      }, 
-      level: 80 
-    },
-    { 
-      name: {
-        it: "DevOps",
-        en: "DevOps"
-      }, 
-      level: 70 
-    }
-  ]
+  skillLevels: []
 };
 
 // Resume/CV content
@@ -65,34 +35,49 @@ export const resumeContent = {
   education: [
     {
       degree: {
-        it: "Master in Computer Science",
+        it: "Laurea magistrale in Informatica",
         en: "Master's in Computer Science"
       },
       institution: {
-        it: "Università di Milano",
-        en: "University of Milan"
+        it: "Università Insubria, Varese",
+        en: "Insubria University, Varese"
       },
-      period: "2016 - 2018",
+      period: "2015 - 2017",
       description: {
-        it: "Specializzazione in Ingegneria del Software e Sistemi Distribuiti. Tesi su 'Implementazione di microservizi per applicazioni cloud-native'.",
-        en: "Specialization in Software Engineering and Distributed Systems. Thesis on 'Implementation of microservices for cloud-native applications'."
+        it: "Specializzazione in gestione dei progetti software.",
+        en: "Specialization in software project management."
       }
     },
     {
-      degree: {
-        it: "Laurea in Informatica",
-        en: "Bachelor's in Computer Science"
+      "degree": {
+        "it": "Laurea triennale in Informatica",
+        "en": "Bachelor’s Degree in Computer Science"
       },
-      institution: {
-        it: "Università di Roma",
-        en: "University of Rome"
+      "institution": {
+        "it": "Università Insubria, Varese",
+        "en": "Insubria University, Varese"
       },
-      period: "2013 - 2016",
-      description: {
-        it: "Formazione accademica su algoritmi, strutture dati, programmazione e sistemi operativi. Progetti accademici focalizzati su web development.",
-        en: "Academic training in algorithms, data structures, programming, and operating systems. Academic projects focused on web development."
+      "period": "2011 - 2015",
+      "description": {
+        "it": "",
+        "en": ""
       }
-    }
+      },
+      {
+        "degree": {
+          "it": "Diploma di scuola superiore in Ragioneria e Programmazione",
+          "en": "High School Diploma in Accounting and Programming"
+        },
+        "institution": {
+          "it": "ITCG L. Einaudi, Domodossola (VB)",
+          "en": "ITCG L. Einaudi, Domodossola (VB)"
+        },
+        "period": "2006 - 2011",
+        "description": {
+          "it": "Indirizzo Mercurio",
+          "en": "Course: Mercurio"
+        }
+      }
   ],
   experience: [
     {
