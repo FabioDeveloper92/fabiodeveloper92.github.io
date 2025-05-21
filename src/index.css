@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 216 60% 99%;
+    --foreground: 220 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 212 100% 35%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 196 100% 42%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 193 98% 73%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-0.5;
+}
+
+.section-heading {
+  @apply text-3xl sm:text-4xl font-bold text-primary mb-6 relative;
+}
+
+.section-heading::after {
+  content: "";
+  @apply block w-20 h-1 bg-secondary mt-2;
+}
+
+.skill-badge {
+  @apply px-3 py-1 rounded-full text-sm bg-secondary/20 text-secondary font-medium;
+}
+
+.project-card {
+  @apply bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+}
+
+.highlight {
+  @apply text-secondary font-medium;
+}
+
+.contact-input {
+  @apply w-full rounded-md border border-gray-300 p-3 text-gray-800 focus:border-secondary focus:ring-1 focus:ring-secondary transition duration-200;
+}

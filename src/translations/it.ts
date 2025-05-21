@@ -1,0 +1,121 @@
+
+// Italian translations
+const it = {
+  // Language names
+  'language.italian': 'Italiano',
+  'language.english': 'Inglese',
+  
+  // Navbar
+  'nav.home': 'Home',
+  'nav.about': 'Chi Sono',
+  'nav.cv': 'CV',
+  'nav.projects': 'Progetti',
+  'nav.contact': 'Contatti',
+  'nav.blog': 'Blog',
+  
+  // Hero section
+  'hero.greeting': 'Ciao, sono',
+  'hero.greetingPrefix': 'Ciao,',
+  'hero.greetingConnector': 'sono',
+  'hero.name': 'Fabio',
+  'hero.greetingWithName': 'Ciao, sono Fabio',
+  'hero.subtitle': 'Aspirante imprenditore nel mondo della programmazione informatica.',
+  'hero.description': 'Trasformo idee in soluzioni digitali innovative.',
+  'hero.contactButton': 'Contattami',
+  'hero.projectsButton': 'Vedi Progetti',
+  'hero.learnMore': 'Scopri di più',
+  
+  // About section
+  'about.title': 'Chi Sono',
+  'about.intro': 'Sono un Software Developer con una passione per la creazione di soluzioni digitali robuste ed eleganti. Con diversi anni di esperienza nello sviluppo web e applicativo, mi dedico a costruire software che risolve problemi reali.',
+  'about.current': 'Attualmente sto lavorando come sviluppatore presso Acme Tech Solutions, dove mi occupo di sviluppare applicazioni web enterprise utilizzando le più moderne tecnologie.',
+  'about.goal': 'Il mio obiettivo è continuare a crescere professionalmente nel settore IT, lavorando a progetti stimolanti che mi permettano di evolvere come sviluppatore e un giorno avviare una mia impresa tecnologica.',
+  'about.personalInfo': 'Info personali',
+  'about.name': 'Nome',
+  'about.phone': 'Telefono',
+  'about.availability': 'Disponibile per nuovi progetti',
+  'about.skills': 'Le mie Skills',
+  'about.skillName.0': 'Frontend Development',
+  'about.skillName.1': 'Backend Development',
+  'about.skillName.2': 'Database Management',
+  'about.skillName.3': 'DevOps',
+  
+  // Resume section
+  'resume.title': 'Curriculum Vitae',
+  'resume.downloadCV': 'Scarica CV',
+  'resume.education': 'Istruzione',
+  'resume.experience': 'Esperienza Professionale',
+  
+  // Contact section
+  'contact.title': 'Contattami',
+  'contact.description': 'Hai un progetto interessante o vuoi discutere di opportunità di collaborazione? Inviami un messaggio e ti risponderò al più presto.',
+  'contact.phone': 'Telefono',
+  'contact.location': 'Località',
+  'contact.formTitle': 'Inviami un messaggio',
+  'contact.fullName': 'Nome Completo',
+  'contact.namePlaceholder': 'Il tuo nome',
+  'contact.emailPlaceholder': 'La tua email',
+  'contact.subject': 'Oggetto',
+  'contact.subjectPlaceholder': 'Di cosa si tratta?',
+  'contact.message': 'Messaggio',
+  'contact.messagePlaceholder': 'Scrivi il tuo messaggio qui...',
+  'contact.sending': 'Invio in corso...',
+  'contact.sendButton': 'Invia Messaggio',
+  'contact.messageSent': 'Messaggio inviato!',
+  'contact.messageSentDesc': 'Grazie per avermi contattato. Ti risponderò il prima possibile.',
+  
+  // Footer
+  'footer.quickLinks': 'Links Rapidi',
+  'footer.social': 'Social',
+  'footer.rights': 'Tutti i diritti riservati',
+  'footer.backToTop': 'Torna in cima',
+  
+  // Projects section
+  'projects.title': 'Progetti',
+  'projects.description': 'Una selezione dei miei migliori progetti di sviluppo software. Ogni progetto rappresenta sfide uniche che ho affrontato e risolto con competenza e creatività.',
+  'projects.caseStudy': 'Case Study',
+  'projects.viewAll': 'Vedi tutti i progetti',
+  
+  // Project page
+  'projectsPage.title': 'Tutti i Progetti',
+  'projectsPage.description': 'Esplora l\'intera gamma dei miei progetti di sviluppo software. Ogni progetto rappresenta una sfida unica che ho affrontato, applicando creatività, competenza tecnica e pensiero strategico.',
+  'projectsPage.backHome': 'Torna alla home',
+  
+  // Project detail page
+  'projectDetail.notFound': 'Progetto non trovato',
+  'projectDetail.notFoundDesc': 'Il progetto che stai cercando non esiste o è stato rimosso.',
+  'projectDetail.backToProjects': 'Torna ai progetti',
+  'projectDetail.details': 'Dettagli del progetto',
+  'projectDetail.client': 'Cliente',
+  'projectDetail.year': 'Anno',
+  'projectDetail.duration': 'Durata',
+  'projectDetail.category': 'Categoria',
+  'projectDetail.technologies': 'Tecnologie',
+  
+  // Project categories
+  'category.webDevelopment': 'Sviluppo Web',
+  'category.webApplication': 'Applicazione Web',
+  'category.enterpriseSolution': 'Soluzione Enterprise',
+  'category.webPlatform': 'Piattaforma Web',
+  'category.analytics': 'Analisi Dati',
+  'category.mobileDevelopment': 'Sviluppo Mobile',
+  
+  // Project titles
+  'project.ecommerce.title': 'Piattaforma E-commerce',
+  'project.taskManagement.title': 'App di Gestione Attività',
+  'project.healthcare.title': 'Portale Sanitario',
+  'project.realEstate.title': 'Piattaforma Immobiliare',
+  'project.socialMedia.title': 'Dashboard Social Media',
+  'project.banking.title': 'App Mobile Banking',
+  
+  // Project descriptions
+  'project.ecommerce.description': 'Piattaforma e-commerce completa con gestione prodotti, carrello, pagamenti e area amministrativa.',
+  'project.taskManagement.description': 'Applicazione per la gestione di progetti e attività, con dashboard personalizzata e notifiche.',
+  'project.healthcare.description': 'Portale per la gestione di appuntamenti medici e cartelle cliniche, con dashboard per medici e pazienti.',
+  'project.realEstate.description': 'Piattaforma per l\'acquisto e la vendita di immobili, con ricerca avanzata e strumenti di valutazione.',
+  'project.socialMedia.description': 'Dashboard per l\'analisi e la gestione di campagne social media con grafici in tempo reale e reportistica.',
+  'project.banking.description': 'Applicazione mobile per servizi bancari con focus su sicurezza e facilità d\'uso.',
+};
+
+export default it;
+
