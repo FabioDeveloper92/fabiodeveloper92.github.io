@@ -72,13 +72,15 @@ const it = {
   
   // Projects section
   'projects.title': 'Progetti',
-  'projects.description': 'Una selezione dei miei migliori progetti di sviluppo software. Ogni progetto rappresenta sfide uniche che ho affrontato e risolto con competenza e creatività.',
+  'projects.description': 'Una selezione dei miei migliori progetti di sviluppo software.',
+  'projects.description_row2': 'Ogni progetto rappresenta una sfida unica che ho affrontato, applicando creatività, competenza tecnica e pensiero strategico.',
   'projects.caseStudy': 'Case Study',
   'projects.viewAll': 'Vedi tutti i progetti',
   
   // Project page
   'projectsPage.title': 'Tutti i Progetti',
-  'projectsPage.description': 'Esplora l\'intera gamma dei miei progetti di sviluppo software. Ogni progetto rappresenta una sfida unica che ho affrontato, applicando creatività, competenza tecnica e pensiero strategico.',
+  'projectsPage.description': 'Esplora l\'intera gamma dei miei progetti di sviluppo software.',
+  'projectsPage.description_row2': 'Ogni progetto rappresenta una sfida unica che ho affrontato, applicando creatività, competenza tecnica e pensiero strategico.',
   'projectsPage.backHome': 'Torna alla home',
   
   // Project detail page
