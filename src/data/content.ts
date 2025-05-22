@@ -180,65 +180,61 @@ export const projectsContent = [
   {
     id: 1,
     title: {
-      it: "Piattaforma E-commerce",
-      en: "E-commerce Platform",
+      it: "TravelPlace - Piattaforma Turismo B2B",
+      en: "TravelPlace - Tourism Platform B2B",
     },
-    category: "Web Development",
-    image:
-      "https://images.unsplash.com/photo-1520333789090-1afc82db536a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    category: "Tourism Platform B2B",
+    image: "/images/projects/travelplace.png",
     description: {
-      it: "Piattaforma e-commerce completa con gestione prodotti, carrello, pagamenti e area amministrativa.",
-      en: "Complete e-commerce platform with product management, cart, payments, and admin area.",
+      it: "Piattaforma per il turismo B2B per gestione prodotti, carrello, pagamenti e area amministrativa.",
+      en: "Complete tourism platform B2B with product management, cart, payments, and admin area.",
     },
-    technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
-    slug: "e-commerce-platform",
+    technologies: ["ReactJS", ".NET", "MSSQL", "MongoDB", "External API"],
+    slug: "tourism-platform",
   },
   {
     id: 2,
     title: {
-      it: "App Gestione Attività",
-      en: "Task Management App",
+      it: "E-commerce di gioielli",
+      en: "Jewerly E-commerce",
     },
-    category: "Web Application",
-    image:
-      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    category: "B2C Web Application",
+    image: "/images/projects/miluna.png",
     description: {
-      it: "Applicazione per la gestione di progetti e attività, con dashboard personalizzata e notifiche.",
-      en: "Application for project and task management, with personalized dashboard and notifications.",
+      it: "Applicazione per la gestione della vendita di gioielli, con carrello, pagamenti e area amministrativa.",
+      en: "Application for managing jewelry sales, with shopping cart, payments, and admin area.",
     },
-    technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
-    slug: "task-management-app",
+    technologies: ["ASP.NET", ".NET", "MSSQL"],
+    slug: "e-commerce-platform",
   },
   {
     id: 3,
     title: {
-      it: "Portale Sanitario",
-      en: "Healthcare Portal",
+      it: "Lince - Sistema Gestione Traffico",
+      en: "Lince - Traffic Management System",
     },
-    category: "Enterprise Solution",
-    image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    description: {
-      it: "Portale per la gestione di appuntamenti medici e cartelle cliniche, con dashboard per medici e pazienti.",
-      en: "Portal for managing medical appointments and clinical records, with dashboards for doctors and patients.",
-    },
-    technologies: [".NET Core", "SQL Server", "Angular", "Azure"],
-    slug: "healthcare-portal",
-  },
-  {
-    id: 4,
-    title: {
-      it: "Marketplace Immobiliare",
-      en: "Real Estate Marketplace",
-    },
-    category: "Web Platform",
-    image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    category: "Backoffice",
+    image: "/images/projects/lince.png",
     description: {
       it: "Piattaforma per l'acquisto e la vendita di immobili, con ricerca avanzata e strumenti di valutazione.",
       en: "Platform for buying and selling real estate, with advanced search and valuation tools.",
     },
-    technologies: ["React", "Django", "PostgreSQL", "Google Maps API"],
-    slug: "real-estate-marketplace",
+    technologies: ["React JS"],
+    slug: "backoffice",
+  },
+  {
+    id: 4,
+    title: {
+      it: "SBB Sondaggi",
+      en: "SBB Surveys",
+    },
+    category: "Web Application",
+    image: "/images/projects/sbb.png",
+    description: {
+      it: "Applicazione web per la gestione / organizzazione / decisione di tutti i sondaggi in SBB.",
+      en: "Web application for the handling / organization / decision of all the meetings in the SBB.",
+    },
+    technologies: ["Angular 5", ".NET", "MSSQL"],
+    slug: "surveys",
   },
 ];
