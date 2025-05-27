@@ -458,130 +458,61 @@ export const projectsData = [
 // Project full descriptions with HTML content
 export const projectFullDescriptions = {
   travelplace: {
-    it: `<h3>travelplace</h3>
-     <p>TODO</p>
-       `,
-    en: `TODO`,
+    it: [],
+    en: [],
   },
   miluna: {
-    it: `<h3>Miluna</h3>
-     <p>TODO</p>
-       `,
-    en: `TODO`,
+    it: [],
+    en: [],
   },
   "lince-backoffice": {
-    it: `<h3>Lince - Sistema Gestione Traffico</h3>
-     <p>TODO</p>
-       `,
-    en: `TODO`,
+    it: [],
+    en: [],
   },
   "sbb-surveys": {
-    it: `<h3>SBB Surveys</h3>
-     <p>TODO</p>
-       `,
-    en: `TODO`,
+    it: [],
+    en: [],
   },
   "trovaprezzi-profiler": {
-    it: `<h3>Trovaprezzi Profiler</h3>
-     <p>TODO</p>
-       `,
-    en: `TODO`,
+    it: [],
+    en: [],
   },
   "googleplus-privacy": {
-    it: `
-    <section>
-  <h2 class="font-bold mb-3">Il Progetto</h2>
- <p>
-    Questo progetto nasce come tesi di laurea triennale con l’obiettivo di sviluppare un'applicazione mobile
-    per migliorare la gestione della privacy dei post pubblicati su Google+.<br><br>
-    L’esigenza era quella di permettere all’utente di creare cerchie ristrette di amici, in modo che solo
-    determinati contatti potessero visualizzare specifici contenuti.
-  </p>
- <p>
-    Ad esempio, era possibile scrivere un post e contrassegnarlo con un’etichetta come <em>"sportivo"</em>: 
-    il contenuto sarebbe stato visibile solo agli amici inclusi nella cerchia dedicata allo sport.
-  </p>
-</section>
-
-  <br><br>
-<section>
-  <h2 class="font-bold mb-3">Sfide Affrontate</h2>
- <p>
-    La sfida principale è stata integrare le API di Google+ con altre API sviluppate all'interno dell’Università dell’Insubria.<br><br>
-    Un altro obiettivo fondamentale è stato progettare un’interfaccia utente semplice e intuitiva, che permettesse
-    la gestione dei post, la creazione delle cerchie di amici e l’interazione con gli altri contenuti presenti su Google+.
-  </p>
-</section>
-
-  <br><br>
-<section>
-  <h2 class="font-bold mb-3">Risultati</h2>
- <p>
-    L’applicazione ha raggiunto gli obiettivi prefissati, dimostrando la fattibilità di una gestione più granulare della privacy
-    all'interno dei social network.<br><br>
-    L’utente è in grado di controllare in modo efficace la visibilità dei propri contenuti, migliorando l’esperienza d’uso
-    e la percezione della sicurezza sulla piattaforma.
-  </p>
-</section>
-
-  <br><br>
-<section>
-  <h2 class="font-bold mb-3">Conclusione</h2>
- <p>
-    Questo progetto ha rappresentato un'importante occasione di crescita sia tecnica che personale.<br><br>
-    Ha permesso di affrontare tematiche complesse come l'integrazione di API esterne, la gestione della privacy
-    e il design orientato all'utente.<br><br>
-    In un’epoca in cui la protezione dei dati personali è sempre più cruciale, strumenti che danno all’utente
-    il pieno controllo sulla propria visibilità online risultano fondamentali.<br><br>
-    L’esperienza maturata ha gettato le basi per futuri sviluppi in ambito mobile e per progetti incentrati sulla sicurezza digitale.
-  </p>
-</section>
-    `,
-    en: `<section>
-  <h2 class="font-bold mb-3">The Project</h2>
- <p>
-    This project was developed as a bachelor's thesis with the aim of creating a mobile application
-    to improve privacy management for posts published on Google+.<br><br>
-    The goal was to allow users to create restricted circles of friends, so that only selected contacts
-    could view specific content.
-  </p>
- <p>
-    For example, a user could write a post and tag it as <em>"sports"</em>: 
-    the content would then only be visible to friends included in the dedicated sports circle.
-  </p>
-</section>
-
-<section>
-  <h2 class="font-bold mb-3">Challenges Faced</h2>
- <p>
-    The main challenge was integrating the Google+ APIs with other APIs developed within the University of Insubria.<br><br>
-    Another key objective was to design a simple and intuitive user interface, enabling users to manage post publishing,
-    create friend circles, and interact with other Google+ content.
-  </p>
-</section>
-
-<section>
-  <h2 class="font-bold mb-3">Results</h2>
- <p>
-    The application successfully achieved its goals, demonstrating the feasibility of more granular privacy control
-    within social networks.<br><br>
-    Users are able to effectively control the visibility of their content, improving both user experience and the
-    perception of safety on the platform.
-  </p>
-</section>
-
-<section>
-  <h2 class="font-bold mb-3">Conclusion</h2>
- <p>
-    This project represented an important opportunity for both technical and personal growth.<br><br>
-    It involved tackling complex topics such as external API integration, privacy management,
-    and user-centered design.<br><br>
-    In an era where data protection is increasingly crucial, tools that give users full control over
-    their online visibility are essential.<br><br>
-    The experience gained has laid the foundation for future developments in mobile applications and projects
-    focused on digital security.
-  </p>
-</section>
-`,
+    it: [
+      {
+        title: "Il Progetto",
+        body: "Questo progetto è nato come tesi di laurea triennale con l'obiettivo di sviluppare un'applicazione mobile per migliorare la gestione della privacy nella pubblicazione dei post su Google Plus.<br/><br/> L'app consentiva di classificare i post per categorie (ad esempio 'sportivo') e mostrarli solo a specifiche cerchie di amici, garantendo un maggiore controllo sui contenuti condivisi.",
+      },
+      {
+        title: "Sfide Affrontate",
+        body: "La principale sfida tecnica è stata l'integrazione delle API di Google Plus con altre API sviluppate internamente presso l'Università dell’Insubria.<br/><br/> Inoltre, uno degli obiettivi fondamentali era progettare un'interfaccia utente semplice e intuitiva che permettesse la gestione delle cerchie di amici, la pubblicazione dei post e l'interazione con i contenuti già presenti su Google Plus.",
+      },
+      {
+        title: "Risultati",
+        body: "Il progetto ha portato alla realizzazione di un'applicazione funzionante, con un'interfaccia user-friendly e un sistema di gestione avanzato delle cerchie di amici.<br/><br/> L'integrazione con le API ha permesso una piena sincronizzazione con Google Plus, offrendo agli utenti un'esperienza sicura, personalizzata e orientata alla privacy nella condivisione dei contenuti.",
+      },
+      {
+        title: "Conclusione",
+        body: "Questo progetto rappresenta un valido esempio di come la tecnologia possa essere utilizzata per offrire maggiore controllo e consapevolezza nella gestione dei dati personali online.<br/><br/> L'esperienza maturata nello sviluppo, nell'integrazione di servizi esterni e nella progettazione dell'interfaccia utente ha rappresentato un’importante crescita professionale, oltre a gettare le basi per futuri progetti nel campo della privacy digitale e della user experience.",
+      },
+    ],
+    en: [
+      {
+        title: "The Project",
+        body: "This project originated as a bachelor’s thesis with the goal of developing a mobile application to improve privacy management when publishing posts on Google Plus.<br/><br/> The app allowed users to categorize posts (e.g., 'sports') and display them only to selected circles of friends, ensuring greater control over shared content.",
+      },
+      {
+        title: "Challenges",
+        body: "The main technical challenge was integrating the Google Plus APIs with other APIs developed internally at the University of Insubria.<br/><br/> Another key objective was designing a simple and intuitive user interface that would enable users to manage friend circles, publish posts, and interact with existing Google Plus content.",
+      },
+      {
+        title: "Results",
+        body: "The project led to the creation of a fully functional application featuring a user-friendly interface and advanced friend-circle management.<br/><br/> The successful API integration allowed full synchronization with Google Plus, providing users with a secure, personalized, and privacy-focused experience for sharing content.",
+      },
+      {
+        title: "Conclusion",
+        body: "This project stands as a solid example of how technology can be used to give users more control and awareness over their personal data online.<br/><br/> The experience gained in development, external service integration, and UI/UX design marked a significant step in my professional growth and laid the groundwork for future projects in digital privacy and user experience.",
+      },
+    ],
   },
 };
