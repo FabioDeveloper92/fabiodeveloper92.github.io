@@ -2,7 +2,7 @@
 import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Instagram, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { socialLinks } from "@/data/socialLinks";
-import { contactData } from "@/data/contactData";
+import { aboutContent } from "@/data/content";
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -42,8 +42,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-800 mb-1">Email</h3>
-                  <a href={`mailto:${contactData.email}`} className="text-primary hover:underline">
-                    {contactData.email}
+                  <a href={`mailto:${aboutContent.personalInfo.email}`} className="text-primary hover:underline">
+                    {aboutContent.personalInfo.email}
                   </a>
                 </div>
               </div>
@@ -54,8 +54,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-800 mb-1">{t('contact.phone')}</h3>
-                  <a href={`tel:${contactData.phone.replace(/\s+/g, '')}`} className="text-primary hover:underline">
-                    {contactData.phone}
+                  <a href={`tel:${aboutContent.personalInfo.phone.replace(/\s+/g, '')}`} className="text-primary hover:underline">
+                    {aboutContent.personalInfo.phone}
                   </a>
                 </div>
               </div>
@@ -67,7 +67,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-bold text-gray-800 mb-1">{t('contact.location')}</h3>
                   <p className="text-gray-700">
-                    {contactData.location.city}, {contactData.location.country}
+                    {aboutContent.personalInfo.location.city}, {aboutContent.personalInfo.location.country}
                   </p>
                 </div>
               </div>

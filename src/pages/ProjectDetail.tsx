@@ -50,7 +50,7 @@ const ProjectDetail = () => {
       <section className="pt-16 pb-16 md:pt-24 md:pb-24">
         <div className="section-container pt-0 md:pt-0">
           <Link
-            to="/#projects"
+            to="/projects"
             className="flex items-center text-primary hover:text-primary/80 mb-4 md:mb-6"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
@@ -82,7 +82,7 @@ const ProjectDetail = () => {
                   </div>
                 ))}
               </div>
-              
+
             </div>
 
             <div className="md:col-span-1 order-first md:order-last mb-6 md:mb-0">

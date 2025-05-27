@@ -1,3 +1,5 @@
+import { count } from "console";
+
 // About section content
 export const aboutContent = {
   intro: {
@@ -16,6 +18,10 @@ export const aboutContent = {
     name: "Fabio Ramoni",
     email: "fabramo92@gmail.com",
     phone: "-",
+    location: {
+      city: "Varese",
+      country: "Italy",
+    },
     availability: {
       it: "Disponibile per nuovi progetti",
       en: "Available for new projects",
