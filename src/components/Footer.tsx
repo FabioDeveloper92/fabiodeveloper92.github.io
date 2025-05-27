@@ -53,46 +53,17 @@ const Footer = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 sm:gap-12">
             <div>
-              <h4 className="font-bold mb-3">{t("footer.quickLinks")}</h4>
-              <ul className="space-y-2">
-                {navLinks.map((link) => (
-                  <li key={link.nameKey}>
-                    {link.external ? (
-                      <a
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-white transition-colors flex items-center"
-                      >
-                        {t(link.nameKey)}
-                        <ExternalLink className="ml-1 h-4 w-4" />
-                      </a>
-                    ) : (
-                      <a
-                        href={link.href}
-                        className="text-gray-400 hover:text-white transition-colors"
-                      >
-                        {t(link.nameKey)}
-                      </a>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-3">{t("footer.social")}</h4>
-              <ul className="space-y-2">
+              <h4 className="font-bold mb-3"></h4>
+              <ul className="flex flex-wrap gap-4">
                 {socialLinks.map((link) => (
                   <li key={link.name}>
                     <a
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-white transition-colors flex items-center"
+                      className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
                     >
                       {getSocialIcon(link.icon)}
-                      {link.name}
                     </a>
                   </li>
                 ))}

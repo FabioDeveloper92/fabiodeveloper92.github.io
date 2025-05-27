@@ -100,23 +100,7 @@ const it = {
   'category.enterpriseSolution': 'Soluzione Enterprise',
   'category.webPlatform': 'Piattaforma Web',
   'category.analytics': 'Analisi Dati',
-  'category.mobileDevelopment': 'Sviluppo Mobile',
-  
-  // Project titles
-  'project.ecommerce.title': 'Piattaforma E-commerce',
-  'project.taskManagement.title': 'App di Gestione Attività',
-  'project.healthcare.title': 'Portale Sanitario',
-  'project.realEstate.title': 'Piattaforma Immobiliare',
-  'project.socialMedia.title': 'Dashboard Social Media',
-  'project.banking.title': 'App Mobile Banking',
-  
-  // Project descriptions
-  'project.ecommerce.description': 'Piattaforma e-commerce completa con gestione prodotti, carrello, pagamenti e area amministrativa.',
-  'project.taskManagement.description': 'Applicazione per la gestione di progetti e attività, con dashboard personalizzata e notifiche.',
-  'project.healthcare.description': 'Portale per la gestione di appuntamenti medici e cartelle cliniche, con dashboard per medici e pazienti.',
-  'project.realEstate.description': 'Piattaforma per l\'acquisto e la vendita di immobili, con ricerca avanzata e strumenti di valutazione.',
-  'project.socialMedia.description': 'Dashboard per l\'analisi e la gestione di campagne social media con grafici in tempo reale e reportistica.',
-  'project.banking.description': 'Applicazione mobile per servizi bancari con focus su sicurezza e facilità d\'uso.',
+  'category.mobileDevelopment': 'Sviluppo Mobile'
 };
 
 export default it;

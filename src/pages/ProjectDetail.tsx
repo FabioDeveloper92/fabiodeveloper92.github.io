@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { getProjectBySlug, projectFullDescriptions } from "@/data/projectsData";
+import { getProjectBySlug, projectFullDescriptions } from "@/data/content";
 
 const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -56,13 +56,13 @@ const ProjectDetail = () => {
           <div className="grid md:grid-cols-3 gap-6 md:gap-8">
             <div className="md:col-span-2">
               <h1 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4">
-                {t(project.titleKey)}
+                {t(project.title[language])}
               </h1>
               
               <div className="mb-6 md:mb-8">
                 <img 
                   src={project.image} 
-                  alt={t(project.titleKey)} 
+                  alt={t(project.title[language])} 
                   className="w-full h-auto rounded-lg shadow-lg" 
                 />
               </div>
@@ -80,7 +80,7 @@ const ProjectDetail = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-gray-700">{t('projectDetail.client')}:</h4>
-                    <p>{project.client?.[language as 'en' | 'it'] || ""}</p>
+                    <p>{project.client}</p>
                   </div>
                   
                   <div>
@@ -90,12 +90,12 @@ const ProjectDetail = () => {
                   
                   <div>
                     <h4 className="font-semibold text-gray-700">{t('projectDetail.duration')}:</h4>
-                    <p>{project.duration?.[language as 'en' | 'it'] || ""}</p>
+                    <p>{project.duration[language]}</p>
                   </div>
                   
                   <div>
                     <h4 className="font-semibold text-gray-700">{t('projectDetail.category')}:</h4>
-                    <p>{t(project.categoryKey)}</p>
+                    <p>{project.category}</p>
                   </div>
                   
                   <div>

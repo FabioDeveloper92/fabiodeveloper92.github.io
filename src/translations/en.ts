@@ -110,28 +110,6 @@ const en = {
   "category.webPlatform": "Web Platform",
   "category.analytics": "Analytics",
   "category.mobileDevelopment": "Mobile Development",
-
-  // Project titles
-  "project.ecommerce.title": "E-commerce Platform",
-  "project.taskManagement.title": "Task Management App",
-  "project.healthcare.title": "Healthcare Portal",
-  "project.realEstate.title": "Real Estate Platform",
-  "project.socialMedia.title": "Social Media Dashboard",
-  "project.banking.title": "Mobile Banking App",
-
-  // Project descriptions
-  "project.ecommerce.description":
-    "Complete e-commerce platform with product management, cart, payments, and admin area.",
-  "project.taskManagement.description":
-    "Application for project and task management, with personalized dashboard and notifications.",
-  "project.healthcare.description":
-    "Portal for managing medical appointments and clinical records, with dashboards for doctors and patients.",
-  "project.realEstate.description":
-    "Platform for buying and selling real estate, with advanced search and valuation tools.",
-  "project.socialMedia.description":
-    "Dashboard for analyzing and managing social media campaigns with real-time charts and reporting.",
-  "project.banking.description":
-    "Mobile banking application with a focus on security and ease of use.",
 };
 
 export default en;

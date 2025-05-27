@@ -179,6 +179,13 @@ export const resumeContent = {
 export const projectsContent = [
   {
     id: 1,
+    year: "2018",
+    duration: {
+      en: "7 years (current)",
+      it: "7 anni (attuale)",
+    },
+    client: "Mind3 SA",
+    featuredRank: 1,
     title: {
       it: "TravelPlace - Piattaforma Turismo B2B",
       en: "TravelPlace - Tourism Platform B2B",
@@ -190,10 +197,17 @@ export const projectsContent = [
       en: "Complete tourism platform B2B with product management, cart, payments, and admin area.",
     },
     technologies: ["ReactJS", ".NET", "MSSQL", "MongoDB", "External API"],
-    slug: "tourism-platform",
+    slug: "travelplace",
   },
   {
     id: 2,
+    year: "2021",
+    duration: {
+      en: "3 years",
+      it: "3 anni",
+    },
+    client: "Mind3 SA",
+    featuredRank: 2,
     title: {
       it: "E-commerce di gioielli",
       en: "Jewerly E-commerce",
@@ -205,10 +219,17 @@ export const projectsContent = [
       en: "Application for managing jewelry sales, with shopping cart, payments, and admin area.",
     },
     technologies: ["ASP.NET", ".NET", "MSSQL"],
-    slug: "e-commerce-platform",
+    slug: "miluna",
   },
   {
     id: 3,
+    year: "2023",
+    duration: {
+      en: "6 months",
+      it: "6 mesi",
+    },
+    client: "Mind3 SA",
+    featuredRank: 3,
     title: {
       it: "Lince - Sistema Gestione Traffico",
       en: "Lince - Traffic Management System",
@@ -216,14 +237,22 @@ export const projectsContent = [
     category: "Backoffice",
     image: "/images/projects/lince.png",
     description: {
-      it: "Piattaforma per l'acquisto e la vendita di immobili, con ricerca avanzata e strumenti di valutazione.",
-      en: "Platform for buying and selling real estate, with advanced search and valuation tools.",
+      it: "Applicazione backoffice per monitorare il traffico in una città.",
+      en: "Backoffice application to monitor traffic in a city.",
     },
     technologies: ["React JS"],
-    slug: "backoffice",
+    slug: "lince-backoffice",
   },
   {
     id: 4,
+    year: "2017",
+    featuredRank: 4,
+    duration: {
+      en: "1 year",
+      it: "1 anno",
+    },
+    durationMonth: null,
+    client: "Triman GMRB",
     title: {
       it: "SBB Sondaggi",
       en: "SBB Surveys",
@@ -235,6 +264,324 @@ export const projectsContent = [
       en: "Web application for the handling / organization / decision of all the meetings in the SBB.",
     },
     technologies: ["Angular 5", ".NET", "MSSQL"],
-    slug: "surveys",
+    slug: "sbb-surveys",
+  },
+  {
+    id: 5,
+    year: "2016",
+    featuredRank: 5,
+    duration: {
+      en: "6 months",
+      it: "6 mesi",
+    },
+    client: "7Pixel",
+    title: {
+      it: "Trovaprezzi - Profiler",
+      en: "Trovaprezzi - Profiler",
+    },
+    category: "Web Application",
+    image: "/images/projects/trovaprezzi.png",
+    description: {
+      it: "Applicazione web per valutare i potenziali clienti in un comparatore di prezzi e-commerce.",
+      en: "Web application to evaluate potential customers in an e-commerce price comparison.",
+    },
+    technologies: [
+      "Java",
+      "Javascript",
+      "JQuery",
+      "Ajax",
+      "Postgresql",
+      "Solr",
+      "Bootstrap",
+      "UML",
+    ],
+    slug: "trovaprezzi-profiler",
+  },
+  {
+    id: 6,
+    year: "2014",
+    duration: {
+      en: "3 months",
+      it: "3 mesi",
+    },
+    client: "Insubria University",
+    featuredRank: 6,
+    title: {
+      it: "Google+ Privacy",
+      en: "Google+ Privacy",
+    },
+    category: "Android Application",
+    image: "/images/projects/googleplus.png",
+    description: {
+      it: "Applicazione Android per migliorare la privacy su Google+",
+      en: "Android application to enhance privacy on Google+",
+    },
+    technologies: ["Android", "Java", "Sqlite", "UML"],
+    slug: "googleplus-privacy",
   },
 ];
+
+// Helper to get project by slug
+export const getProjectBySlug = (slug: string) => {
+  return projectsContent.find((project) => project.slug === slug);
+};
+
+export const projectsData = [
+  {
+    id: 1,
+    titleKey: "project.ecommerce.title",
+    category: "Web Development",
+    categoryKey: "category.webDevelopment",
+    image:
+      "https://images.unsplash.com/photo-1520333789090-1afc82db536a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    slug: "e-commerce-platform",
+    descriptionKey: "project.ecommerce.description",
+    year: "2023",
+    technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
+    client: {
+      en: "Clothing Company",
+      it: "Azienda di Abbigliamento",
+    },
+    duration: {
+      en: "4 months",
+      it: "4 mesi",
+    },
+    fullDescriptionKey: "project.ecommerce.fullDescription",
+  },
+  {
+    id: 2,
+    titleKey: "project.taskManagement.title",
+    category: "Web Application",
+    categoryKey: "category.webApplication",
+    image:
+      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    slug: "task-management-app",
+    descriptionKey: "project.taskManagement.description",
+    year: "2022",
+    technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
+    client: {
+      en: "Consulting Company",
+      it: "Azienda di Consulenza",
+    },
+    duration: {
+      en: "3 months",
+      it: "3 mesi",
+    },
+    fullDescriptionKey: "project.taskManagement.fullDescription",
+  },
+  {
+    id: 3,
+    titleKey: "project.healthcare.title",
+    category: "Enterprise Solution",
+    categoryKey: "category.enterpriseSolution",
+    image:
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    slug: "healthcare-portal",
+    descriptionKey: "project.healthcare.description",
+    year: "2023",
+    technologies: [".NET Core", "SQL Server", "Angular", "Azure"],
+    client: {
+      en: "Private Clinics Network",
+      it: "Network di Cliniche Private",
+    },
+    duration: {
+      en: "6 months",
+      it: "6 mesi",
+    },
+    fullDescriptionKey: "project.healthcare.fullDescription",
+  },
+  {
+    id: 4,
+    titleKey: "project.realEstate.title",
+    category: "Web Platform",
+    categoryKey: "category.webPlatform",
+    image:
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    slug: "real-estate-marketplace",
+    descriptionKey: "project.realEstate.description",
+    year: "2022",
+    technologies: ["React", "Django", "PostgreSQL", "Google Maps API"],
+    client: {
+      en: "Real Estate Agency",
+      it: "Agenzia Immobiliare",
+    },
+    duration: {
+      en: "5 months",
+      it: "5 mesi",
+    },
+    fullDescriptionKey: "project.realEstate.fullDescription",
+  },
+  {
+    id: 5,
+    titleKey: "project.socialMedia.title",
+    category: "Analytics",
+    categoryKey: "category.analytics",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    slug: "social-media-dashboard",
+    descriptionKey: "project.socialMedia.description",
+    year: "2023",
+    technologies: ["React", "D3.js", "Node.js", "MongoDB"],
+    client: {
+      en: "Marketing Agency",
+      it: "Agenzia di Marketing",
+    },
+    duration: {
+      en: "3 months",
+      it: "3 mesi",
+    },
+    fullDescriptionKey: "project.socialMedia.fullDescription",
+  },
+  {
+    id: 6,
+    titleKey: "project.banking.title",
+    category: "Mobile Development",
+    categoryKey: "category.mobileDevelopment",
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    slug: "mobile-banking-app",
+    descriptionKey: "project.banking.description",
+    year: "2022",
+    technologies: ["React Native", "Redux", "Node.js", "PostgreSQL"],
+    client: {
+      en: "Financial Services Company",
+      it: "Azienda di Servizi Finanziari",
+    },
+    duration: {
+      en: "4 months",
+      it: "4 mesi",
+    },
+    fullDescriptionKey: "project.banking.fullDescription",
+  },
+];
+
+// Project full descriptions with HTML content
+export const projectFullDescriptions = {
+  travelplace: {
+    it: `<h3>travelplace</h3>
+     <p>TODO</p>
+       `,
+    en: `TODO`,
+  },
+  miluna: {
+    it: `<h3>Miluna</h3>
+     <p>TODO</p>
+       `,
+    en: `TODO`,
+  },
+  "lince-backoffice": {
+    it: `<h3>Lince - Sistema Gestione Traffico</h3>
+     <p>TODO</p>
+       `,
+    en: `TODO`,
+  },
+  "sbb-surveys": {
+    it: `<h3>SBB Surveys</h3>
+     <p>TODO</p>
+       `,
+    en: `TODO`,
+  },
+  "trovaprezzi-profiler": {
+    it: `<h3>Trovaprezzi Profiler</h3>
+     <p>TODO</p>
+       `,
+    en: `TODO`,
+  },
+  "googleplus-privacy": {
+    it: `
+    <section>
+  <h2 class="font-bold mb-3">Il Progetto</h2>
+ <p>
+    Questo progetto nasce come tesi di laurea triennale con l’obiettivo di sviluppare un'applicazione mobile
+    per migliorare la gestione della privacy dei post pubblicati su Google+.<br><br>
+    L’esigenza era quella di permettere all’utente di creare cerchie ristrette di amici, in modo che solo
+    determinati contatti potessero visualizzare specifici contenuti.
+  </p>
+ <p>
+    Ad esempio, era possibile scrivere un post e contrassegnarlo con un’etichetta come <em>"sportivo"</em>: 
+    il contenuto sarebbe stato visibile solo agli amici inclusi nella cerchia dedicata allo sport.
+  </p>
+</section>
+
+  <br><br>
+<section>
+  <h2 class="font-bold mb-3">Sfide Affrontate</h2>
+ <p>
+    La sfida principale è stata integrare le API di Google+ con altre API sviluppate all'interno dell’Università dell’Insubria.<br><br>
+    Un altro obiettivo fondamentale è stato progettare un’interfaccia utente semplice e intuitiva, che permettesse
+    la gestione dei post, la creazione delle cerchie di amici e l’interazione con gli altri contenuti presenti su Google+.
+  </p>
+</section>
+
+  <br><br>
+<section>
+  <h2 class="font-bold mb-3">Risultati</h2>
+ <p>
+    L’applicazione ha raggiunto gli obiettivi prefissati, dimostrando la fattibilità di una gestione più granulare della privacy
+    all'interno dei social network.<br><br>
+    L’utente è in grado di controllare in modo efficace la visibilità dei propri contenuti, migliorando l’esperienza d’uso
+    e la percezione della sicurezza sulla piattaforma.
+  </p>
+</section>
+
+  <br><br>
+<section>
+  <h2 class="font-bold mb-3">Conclusione</h2>
+ <p>
+    Questo progetto ha rappresentato un'importante occasione di crescita sia tecnica che personale.<br><br>
+    Ha permesso di affrontare tematiche complesse come l'integrazione di API esterne, la gestione della privacy
+    e il design orientato all'utente.<br><br>
+    In un’epoca in cui la protezione dei dati personali è sempre più cruciale, strumenti che danno all’utente
+    il pieno controllo sulla propria visibilità online risultano fondamentali.<br><br>
+    L’esperienza maturata ha gettato le basi per futuri sviluppi in ambito mobile e per progetti incentrati sulla sicurezza digitale.
+  </p>
+</section>
+    `,
+    en: `<section>
+  <h2 class="font-bold mb-3">The Project</h2>
+ <p>
+    This project was developed as a bachelor's thesis with the aim of creating a mobile application
+    to improve privacy management for posts published on Google+.<br><br>
+    The goal was to allow users to create restricted circles of friends, so that only selected contacts
+    could view specific content.
+  </p>
+ <p>
+    For example, a user could write a post and tag it as <em>"sports"</em>: 
+    the content would then only be visible to friends included in the dedicated sports circle.
+  </p>
+</section>
+
+<section>
+  <h2 class="font-bold mb-3">Challenges Faced</h2>
+ <p>
+    The main challenge was integrating the Google+ APIs with other APIs developed within the University of Insubria.<br><br>
+    Another key objective was to design a simple and intuitive user interface, enabling users to manage post publishing,
+    create friend circles, and interact with other Google+ content.
+  </p>
+</section>
+
+<section>
+  <h2 class="font-bold mb-3">Results</h2>
+ <p>
+    The application successfully achieved its goals, demonstrating the feasibility of more granular privacy control
+    within social networks.<br><br>
+    Users are able to effectively control the visibility of their content, improving both user experience and the
+    perception of safety on the platform.
+  </p>
+</section>
+
+<section>
+  <h2 class="font-bold mb-3">Conclusion</h2>
+ <p>
+    This project represented an important opportunity for both technical and personal growth.<br><br>
+    It involved tackling complex topics such as external API integration, privacy management,
+    and user-centered design.<br><br>
+    In an era where data protection is increasingly crucial, tools that give users full control over
+    their online visibility are essential.<br><br>
+    The experience gained has laid the foundation for future developments in mobile applications and projects
+    focused on digital security.
+  </p>
+</section>
+`,
+  },
+};

@@ -6,7 +6,7 @@ import { FileText, ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { projectsData } from "@/data/projectsData";
+import { projectsContent } from "@/data/content";
 
 const ProjectsPage = () => {
   const { t, language } = useLanguage();
@@ -36,26 +36,26 @@ const ProjectsPage = () => {
           </p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projectsData.map((project) => (
+            {projectsContent.map((project) => (
               <div key={project.id} className="project-card animate-fade-in">
                 <div className="aspect-video w-full overflow-hidden">
                   <img 
                     src={project.image} 
-                    alt={t(project.titleKey)} 
+                    alt={project.title[language]}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
                   />
                 </div>
                 
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold text-gray-800">{t(project.titleKey)}</h3>
+                    <h3 className="text-xl font-bold text-gray-800">{project.title[language]}</h3>
                     <span className="text-xs bg-secondary/20 text-secondary px-2 py-1 rounded-full">
                       {project.year}
                     </span>
                   </div>
                   
                   <p className="text-gray-700 mb-4 line-clamp-2">
-                    {t(project.descriptionKey)}
+                     {project.description[language]}
                   </p>
                   
                   <div className="flex flex-wrap gap-2 mb-5">
@@ -72,7 +72,7 @@ const ProjectsPage = () => {
                   </div>
                   
                   <Button variant="default" size="sm" asChild>
-                    <Link to={`/progetto/${project.slug}`}>
+                    <Link to={`/project/${project.slug}`}>
                       <FileText className="mr-1 h-4 w-4" />
                       {t('projects.caseStudy')}
                     </Link>
