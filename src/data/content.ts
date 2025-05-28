@@ -469,8 +469,50 @@ export const projectFullDescriptions = {
     en: [],
   },
   miluna: {
-    it: [],
-    en: [],
+    it: [
+      {
+        title: "Il Progetto",
+        body: "Miluna è un sito di ecommerce specializzato nella vendita di gioielli di alta qualità. L’obiettivo principale è creare una piattaforma di vendita online che garantisca un’esperienza utente unica e coinvolgente, accompagnando l’utente in ogni fase, dalla scelta del prodotto, al processo di acquisto, al pagamento, fino alla visualizzazione e gestione degli ordini.<br><br>Dal punto di vista amministrativo, il sistema è stato progettato per garantire la massima autonomia agli operatori, permettendo loro di creare e personalizzare pagine ad hoc per la presentazione dei gioielli, la promozione di eventi esclusivi e la gestione di un blog dedicato, così da comunicare efficacemente con i clienti e rafforzare il brand.",
+      },
+      {
+        title: "Sfide Affrontate",
+        body: 'Tra le sfide più rilevanti affrontate durante lo sviluppo del progetto vi sono:<br><ul class="list-disc"><li>Creazione di una struttura robusta e scalabile per gestire l’intero processo di acquisto, garantendo sicurezza e affidabilità;</li><li>Sviluppo di un sistema CMS flessibile e personalizzabile che consenta agli amministratori di modificare facilmente menu, contenuti e pagine senza la necessità di interventi tecnici;</li><li>Integrazione di un sistema di pagamento sicuro, semplice da utilizzare per gli utenti, compatibile con diversi metodi di pagamento e conforme alle normative vigenti.</li></ul>',
+      },
+      {
+        title: "Soluzioni Tecniche",
+        body: "La piattaforma è stata sviluppata utilizzando tecnologie consolidate e performanti: per la parte front-end e back-end si è scelto di utilizzare .NET con ASP.NET, supportato da Microsoft SQL Server per la gestione efficiente e sicura del database.<br><br>Per la parte amministrativa (backoffice) è stato impiegato AngularJS, che ha permesso di realizzare un’interfaccia dinamica, reattiva e di facile utilizzo, favorendo la gestione autonoma di contenuti, pagine e funzionalità da parte degli operatori.",
+      },
+      {
+        title: "Risultati",
+        body: "Il risultato finale è una piattaforma ecommerce completa, stabile e scalabile, che offre agli utenti un’esperienza d’acquisto fluida, veloce e piacevole, con funzionalità che facilitano la ricerca e selezione dei prodotti, il pagamento sicuro e il monitoraggio degli ordini.<br><br>Parallelamente, gli operatori amministrativi possono gestire in completa autonomia il sito, creando e modificando pagine, aggiornando contenuti, promuovendo eventi e mantenendo attivo un blog, tutto tramite un’interfaccia intuitiva e performante.",
+      },
+      {
+        title: "Conclusione",
+        body: "La piattaforma Miluna ha raggiunto con successo gli obiettivi prefissati, garantendo una soluzione tecnologica avanzata che supporta efficacemente sia l’esperienza utente finale che le esigenze gestionali degli operatori. Grazie a questo progetto, Miluna si posiziona come un punto di riferimento nel mercato ecommerce di gioielli, pronta a rispondere alle sfide future con flessibilità e innovazione.",
+      },
+    ],
+    en: [
+      {
+        title: "The Project",
+        body: "Miluna is an ecommerce website specializing in the sale of high-quality jewelry. The main goal is to create an online sales platform that guarantees a unique and engaging user experience, guiding the user through every stage—from product selection, to purchase, payment, and order tracking.<br><br>From an administrative standpoint, the system is designed to give operators full autonomy to create and customize dedicated pages for jewelry presentations, exclusive event promotions, and managing a blog to effectively communicate with customers and strengthen the brand.",
+      },
+      {
+        title: "Challenges Faced",
+        body: 'The key challenges encountered during the project development included:<br><ul class="list-disc"><li>Building a robust and scalable structure to manage the entire purchase process, ensuring security and reliability;</li><li>Developing a flexible and customizable CMS system allowing administrators to easily modify menus, content, and pages without technical intervention;</li><li>Integrating a secure payment system that is user-friendly, supports multiple payment methods, and complies with current regulations.</li></ul>',
+      },
+      {
+        title: "Technical Solutions",
+        body: "The platform was developed using proven and efficient technologies: .NET with ASP.NET was chosen for the front-end and back-end, supported by Microsoft SQL Server for effective and secure database management.<br><br>For the administrative backoffice, AngularJS was used, enabling the creation of a dynamic, responsive, and user-friendly interface that supports autonomous management of content, pages, and functionalities by operators.",
+      },
+      {
+        title: "Results",
+        body: "The final outcome is a complete, stable, and scalable ecommerce platform that offers users a smooth, fast, and enjoyable shopping experience, with features that facilitate product search and selection, secure payment, and order tracking.<br><br>At the same time, administrative operators can independently manage the site by creating and editing pages, updating content, promoting events, and maintaining an active blog—all through an intuitive and high-performance interface.",
+      },
+      {
+        title: "Conclusion",
+        body: "The Miluna platform successfully met the established goals, delivering an advanced technological solution that effectively supports both the end-user experience and the management needs of operators. Thanks to this project, Miluna positions itself as a benchmark in the jewelry ecommerce market, ready to face future challenges with flexibility and innovation.",
+      },
+    ],
   },
   "lince-backoffice": {
     it: [
