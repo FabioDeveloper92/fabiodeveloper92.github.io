@@ -473,8 +473,50 @@ export const projectFullDescriptions = {
     en: [],
   },
   "lince-backoffice": {
-    it: [],
-    en: [],
+    it: [
+      {
+        title: "Il Progetto",
+        body: 'Il progetto consiste nella creazione di un backoffice per Lince, un Sistema di Gestione Traffico, volto a migliorare l’efficienza e la gestione operativa degli operatori coinvolti.<br><br>Il backoffice offre diverse funzionalità chiave, tra cui:<br><br><ul class="list-disc"><li>Gestione e configurazione delle regole di traffico e delle priorità.</li><li>Assegnazione e controllo degli accessi e dei permessi degli operatori.</li><li>Visualizzazione e analisi dei dati storici per ottimizzare le strategie di gestione.</li><li>Integrazione con sistemi esterni tramite API per sincronizzare dati e aggiornamenti.</li></ul><br><br>',
+      },
+      {
+        title: "Sfide Affrontate",
+        body: "Le principali sfide affrontate sono state la realizzazione di un backoffice semplice e intuitivo, pensato per facilitare l’utilizzo da parte degli operatori con diversi livelli di esperienza.<br><br>Inoltre, è stata necessaria l’integrazione fluida di API esterne per garantire la raccolta e la sincronizzazione dei dati in tempo reale.<br><br>",
+      },
+      {
+        title: "Soluzioni Tecniche",
+        body: "Per lo sviluppo del backoffice è stato scelto ReactJS, un framework moderno che ha permesso di realizzare un’interfaccia utente reattiva e modulare, migliorando la manutenzione e l’espandibilità del sistema.<br><br>",
+      },
+      {
+        title: "Risultati",
+        body: "Il progetto ha portato alla realizzazione di un backoffice efficiente e user-friendly, che ha migliorato la produttività degli operatori e facilitato la gestione del traffico.<br><br>Dal backoffice è ora possibile gestire diverse configurazioni, tra cui parametri di sistema, regole di traffico e autorizzazioni degli utenti, offrendo così maggiore flessibilità operativa.<br><br>L’integrazione con API esterne ha permesso un aggiornamento costante e affidabile dei dati, migliorando la qualità delle informazioni disponibili.<br><br>",
+      },
+      {
+        title: "Conclusione",
+        body: "Il backoffice sviluppato per il Sistema Gestione Traffico Lince ha soddisfatto gli obiettivi prefissati, offrendo una soluzione tecnologica moderna e funzionale che supporta efficacemente le attività operative.<br><br>",
+      },
+    ],
+    en: [
+      {
+        title: "The Project",
+        body: 'The project involves creating a backoffice for Lince, a Traffic Management System aimed at improving the efficiency and operational management of the involved operators.<br><br>The backoffice offers several key features, including:<br><br><ul class="list-disc"><li>Management and configuration of traffic rules and priorities.</li><li>Assignment and control of operator access and permissions.</li><li>Visualization and analysis of historical data to optimize management strategies.</li><li>Integration with external systems via APIs to synchronize data and updates.</li></ul><br><br>',
+      },
+      {
+        title: "Challenges Faced",
+        body: "The main challenges involved developing a simple and intuitive backoffice designed to facilitate use by operators with varying levels of experience.<br><br>Additionally, seamless integration of external APIs was necessary to ensure real-time data collection and synchronization.<br><br>",
+      },
+      {
+        title: "Technical Solutions",
+        body: "ReactJS was chosen for the development of the backoffice, a modern framework that enabled the creation of a responsive and modular user interface, improving maintainability and scalability of the system.<br><br>",
+      },
+      {
+        title: "Results",
+        body: "The project resulted in an efficient and user-friendly backoffice that improved operator productivity and facilitated traffic management.<br><br>The backoffice now allows management of various configurations, including system parameters, traffic rules, and user authorizations, offering greater operational flexibility.<br><br>Integration with external APIs enabled continuous and reliable data updates, enhancing the quality of available information.<br><br>",
+      },
+      {
+        title: "Conclusion",
+        body: "The backoffice developed for the Lince Traffic Management System met the set objectives, providing a modern and functional technological solution that effectively supports operational activities.<br><br>",
+      },
+    ],
   },
   "sbb-surveys": {
     it: [],
@@ -496,7 +538,7 @@ export const projectFullDescriptions = {
       },
       {
         title: "Risultati",
-        body: "Lo strumento sviluppato consente al team commerciale di prendere decisioni più consapevoli e basate su dati oggettivi nella fase di valutazione dei nuovi merchant.<br><br>Il sistema è in grado di:<br><br><ul class=\"list-disc\"><li>Eseguire controlli automatici per individuare eventuali comportamenti fraudolenti.</li><li>Fornire stime affidabili sulla visibilità media dei prodotti (in termini di posizionamento nei risultati di ricerca).</li><li>Prevedere il numero di click potenzialmente generabili, basandosi su dati storici.</li><li>Segnalare se i prodotti si collocano in categorie a bassa concorrenza, favorendo strategie di inserimento più efficaci.</li></ul><br><br>",
+        body: 'Lo strumento sviluppato consente al team commerciale di prendere decisioni più consapevoli e basate su dati oggettivi nella fase di valutazione dei nuovi merchant.<br><br>Il sistema è in grado di:<br><br><ul class="list-disc"><li>Eseguire controlli automatici per individuare eventuali comportamenti fraudolenti.</li><li>Fornire stime affidabili sulla visibilità media dei prodotti (in termini di posizionamento nei risultati di ricerca).</li><li>Prevedere il numero di click potenzialmente generabili, basandosi su dati storici.</li><li>Segnalare se i prodotti si collocano in categorie a bassa concorrenza, favorendo strategie di inserimento più efficaci.</li></ul><br><br>',
       },
       {
         title: "Conclusione",
@@ -518,7 +560,7 @@ export const projectFullDescriptions = {
       },
       {
         title: "Results",
-        body: "The tool developed enables the sales team to make more informed and data-driven decisions when evaluating new merchants.<br><br>The system is capable of:<br><br><ul class=\"list-disc\"><li>Running automated checks to identify potentially fraudulent behavior.</li><li>Providing reliable estimates of product visibility (in terms of search result positioning).</li><li>Forecasting the number of potential clicks based on historical data.</li><li>Indicating whether the merchant's products fall into low-competition categories, helping inform more effective insertion strategies.</li></ul><br><br>",
+        body: 'The tool developed enables the sales team to make more informed and data-driven decisions when evaluating new merchants.<br><br>The system is capable of:<br><br><ul class="list-disc"><li>Running automated checks to identify potentially fraudulent behavior.</li><li>Providing reliable estimates of product visibility (in terms of search result positioning).</li><li>Forecasting the number of potential clicks based on historical data.</li><li>Indicating whether the merchant\'s products fall into low-competition categories, helping inform more effective insertion strategies.</li></ul><br><br>',
       },
       {
         title: "Conclusion",
