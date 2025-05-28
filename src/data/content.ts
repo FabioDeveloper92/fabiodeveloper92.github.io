@@ -298,6 +298,7 @@ export const projectsContent = [
       "Ajax",
       "Postgresql",
       "Solr",
+      "REST API",
       "Bootstrap",
       "UML",
     ],
@@ -313,8 +314,8 @@ export const projectsContent = [
     client: "Insubria University",
     featuredRank: 6,
     title: {
-      it: "Google+ Privacy",
-      en: "Google+ Privacy",
+      it: "Google+ Classify",
+      en: "Google+ Classify",
     },
     category: "Android Application",
     image: "/images/projects/googleplus.png",
@@ -323,7 +324,7 @@ export const projectsContent = [
       en: "Android application to enhance privacy on Google+",
     },
     technologies: ["Android", "Java", "Sqlite", "UML"],
-    slug: "googleplus-privacy",
+    slug: "googleplus-classify",
   },
 ];
 
@@ -480,10 +481,52 @@ export const projectFullDescriptions = {
     en: [],
   },
   "trovaprezzi-profiler": {
-    it: [],
-    en: [],
+    it: [
+      {
+        title: "Il Progetto",
+        body: "Questo progetto nasce dall’esigenza di automatizzare e migliorare il processo di valutazione preliminare dei merchant da parte del team commerciale di TrovaPrezzi.<br><br>Attualmente, tali analisi vengono effettuate manualmente, con un elevato margine di errore, basandosi su informazioni generiche riguardanti l’affidabilità delle offerte proposte, il numero potenziale di click e la visibilità dei prodotti.<br><br>L’obiettivo è sviluppare una piattaforma web in grado di supportare i commerciali, fornendo dati dettagliati, affidabili e in tempi contenuti.<br><br>",
+      },
+      {
+        title: "Sfide Affrontate",
+        body: "Una delle principali difficoltà è stata l'individuazione e la valutazione degli strumenti di web scraping più adatti per estrarre dati affidabili e strutturati dai siti dei merchant.<br><br>Un'altra sfida importante ha riguardato l'ottimizzazione delle query di ricerca sul database di TrovaPrezzi, necessaria per ottenere risultati precisi e pertinenti in tempi rapidi.<br><br>Infine, è stata affrontata la progettazione di un’interfaccia web chiara e intuitiva, pensata per agevolare i commerciali nell’analisi dei dati, anche in assenza di competenze tecniche avanzate.<br><br>",
+      },
+      {
+        title: "Soluzioni Tecniche",
+        body: "Per superare queste sfide, la piattaforma è stata realizzata seguendo un'architettura a servizi basata su API REST, che ha garantito modularità e semplicità nell’integrazione tra i vari componenti del sistema.<br><br>L’analisi dei dati è stata affidata ad Apache Solr, un motore di ricerca avanzato che, grazie a un’integrazione con codice Java, ha permesso di gestire interrogazioni complesse e aggregazioni in modo efficiente.<br><br>I dati estratti e analizzati sono stati salvati in un database relazionale strutturato, assicurando coerenza e rapidità di accesso.<br><br>Per quanto riguarda l’interfaccia utente, è stato adottato il framework Bootstrap, che ha consentito di sviluppare un frontend responsive e facilmente utilizzabile dai membri del team commerciale.<br><br>",
+      },
+      {
+        title: "Risultati",
+        body: "Lo strumento sviluppato consente al team commerciale di prendere decisioni più consapevoli e basate su dati oggettivi nella fase di valutazione dei nuovi merchant.<br><br>Il sistema è in grado di:<br><br><ul class=\"list-disc\"><li>Eseguire controlli automatici per individuare eventuali comportamenti fraudolenti.</li><li>Fornire stime affidabili sulla visibilità media dei prodotti (in termini di posizionamento nei risultati di ricerca).</li><li>Prevedere il numero di click potenzialmente generabili, basandosi su dati storici.</li><li>Segnalare se i prodotti si collocano in categorie a bassa concorrenza, favorendo strategie di inserimento più efficaci.</li></ul><br><br>",
+      },
+      {
+        title: "Conclusione",
+        body: "Il progetto rappresenta uno strumento concreto per aumentare l'efficacia e l'efficienza del team commerciale di TrovaPrezzi.<br><br>Grazie all'automatizzazione dell'analisi preliminare dei merchant, si riduce il margine di errore nelle valutazioni e si migliora il processo decisionale, con benefici evidenti in termini di profittabilità e qualità del servizio.<br><br>",
+      },
+    ],
+    en: [
+      {
+        title: "The Project",
+        body: "This project was born out of the need to automate and improve the preliminary evaluation process of merchants by the TrovaPrezzi sales team.<br><br>Currently, these analyses are carried out manually, with a high margin of error, based on general information regarding the reliability of offers, the potential number of clicks, and product visibility.<br><br>The goal is to develop a web platform that supports the sales team by providing detailed, reliable data within a short time frame.<br><br>",
+      },
+      {
+        title: "Challenges Faced",
+        body: "One of the main difficulties was identifying and evaluating the most suitable web scraping tools to extract reliable and structured data from merchants' websites.<br><br>Another major challenge involved optimizing search queries on the TrovaPrezzi database to retrieve accurate and relevant results quickly.<br><br>Finally, designing a clear and intuitive web interface was essential to ensure that the sales team could efficiently analyze data, even without advanced technical skills.<br><br>",
+      },
+      {
+        title: "Technical Solutions",
+        body: "To overcome these challenges, the platform was built using a RESTful API architecture, which ensured modularity and ease of integration between the system components.<br><br>Data analysis was handled by Apache Solr, an advanced search engine that, integrated with Java-based code, allowed the system to manage complex queries and aggregations efficiently.<br><br>The extracted and processed data was stored in a structured relational database to ensure consistency and fast access.<br><br>The user interface was developed using the Bootstrap framework, enabling a responsive and accessible frontend tailored to the needs of the sales team.<br><br>",
+      },
+      {
+        title: "Results",
+        body: "The tool developed enables the sales team to make more informed and data-driven decisions when evaluating new merchants.<br><br>The system is capable of:<br><br><ul class=\"list-disc\"><li>Running automated checks to identify potentially fraudulent behavior.</li><li>Providing reliable estimates of product visibility (in terms of search result positioning).</li><li>Forecasting the number of potential clicks based on historical data.</li><li>Indicating whether the merchant's products fall into low-competition categories, helping inform more effective insertion strategies.</li></ul><br><br>",
+      },
+      {
+        title: "Conclusion",
+        body: "The project delivers a concrete tool to increase the effectiveness and efficiency of the TrovaPrezzi sales team.<br><br>By automating the preliminary merchant evaluation process, it reduces the margin of error in assessments and improves decision-making, resulting in higher profitability and better service quality.<br><br>",
+      },
+    ],
   },
-  "googleplus-privacy": {
+  "googleplus-classify": {
     it: [
       {
         title: "Il Progetto",
@@ -492,6 +535,10 @@ export const projectFullDescriptions = {
       {
         title: "Sfide Affrontate",
         body: "La principale sfida tecnica è stata l'integrazione delle API di Google Plus con altre API sviluppate internamente presso l'Università dell’Insubria.<br/><br/> Inoltre, uno degli obiettivi fondamentali era progettare un'interfaccia utente semplice e intuitiva che permettesse la gestione delle cerchie di amici, la pubblicazione dei post e l'interazione con i contenuti già presenti su Google Plus.",
+      },
+      {
+        title: "Soluzioni tecniche",
+        body: "L'applicazione è stata sviluppata per dispositivi mobili Android utilizzando Java.<br/><br/>La comunicazione con Google+ avviene tramite le API ufficiali, mentre un classificatore esterno, ospitato su un server dedicato, riceve i testi prima della condivisione e ne restituisce la categoria tematica.<br/><br/>Le categorie vengono generate dinamicamente in base ai contenuti analizzati e memorizzate in un database relazionale (PostgreSQL) insieme a informazioni sugli amici, le cerchie, i post e le associazioni tra utenti e categorie. Per garantire una buona esperienza utente, è stata progettata un'interfaccia semplice e intuitiva, che consente di gestire le cerchie, selezionare gli amici e pubblicare i contenuti già classificati in maniera trasparente.",
       },
       {
         title: "Risultati",
@@ -505,19 +552,23 @@ export const projectFullDescriptions = {
     en: [
       {
         title: "The Project",
-        body: "This project originated as a bachelor’s thesis with the goal of developing a mobile application to improve privacy management when publishing posts on Google Plus.<br/><br/> The app allowed users to categorize posts (e.g., 'sports') and display them only to selected circles of friends, ensuring greater control over shared content.",
+        body: "This project was born from the need to automate and improve the preliminary evaluation process of merchants by the TrovaPrezzi sales team.<br><br>Currently, these analyses are carried out manually, with a high margin of error, based on general information about the reliability of the offers, the potential number of clicks, and the visibility of the products.<br><br>The goal is to develop a web platform that supports the sales team by providing detailed, reliable data in a short time frame.<br><br>",
       },
       {
         title: "Challenges",
-        body: "The main technical challenge was integrating the Google Plus APIs with other APIs developed internally at the University of Insubria.<br/><br/> Another key objective was designing a simple and intuitive user interface that would enable users to manage friend circles, publish posts, and interact with existing Google Plus content.",
+        body: "One of the main challenges was identifying and evaluating the most suitable web scraping tools for extracting reliable and structured data from merchant websites.<br><br>Another key issue was optimizing search queries on the TrovaPrezzi database to retrieve accurate and relevant results in a timely manner.<br><br>Finally, designing a user-friendly and intuitive web interface was crucial to ensure that salespeople, even without technical expertise, could easily access and interpret the data provided by the system.<br><br>",
+      },
+      {
+        title: "Technical Solutions",
+        body: "To address these challenges, the platform was built using a RESTful API architecture, ensuring modularity and easy integration between system components.<br><br>Data analysis was handled using Apache Solr, a powerful search engine that, combined with Java-based processing, enabled efficient handling of complex queries and data aggregations from the TrovaPrezzi database.<br><br>The extracted and processed data was stored in a structured relational database to ensure consistency and fast access.<br><br>The user interface was developed using the Bootstrap framework, which allowed for the creation of a responsive and accessible frontend tailored to the needs of the sales team.<br><br>",
       },
       {
         title: "Results",
-        body: "The project led to the creation of a fully functional application featuring a user-friendly interface and advanced friend-circle management.<br/><br/> The successful API integration allowed full synchronization with Google Plus, providing users with a secure, personalized, and privacy-focused experience for sharing content.",
+        body: "The resulting tool enables the sales team to make more informed and data-driven decisions when evaluating new merchants.<br><br>It provides automated checks that help identify potentially fraudulent sellers, offers precise estimates of how visible their products are likely to be on the platform, and forecasts the number of clicks they might receive based on historical data.<br><br>Additionally, the system can detect whether a merchant's products fall into low-competition categories, helping optimize product placement and increasing the chances of success for both the merchant and TrovaPrezzi.<br><br>",
       },
       {
         title: "Conclusion",
-        body: "This project stands as a solid example of how technology can be used to give users more control and awareness over their personal data online.<br/><br/> The experience gained in development, external service integration, and UI/UX design marked a significant step in my professional growth and laid the groundwork for future projects in digital privacy and user experience.",
+        body: "The project provides a concrete tool to enhance the effectiveness and efficiency of the TrovaPrezzi sales team.<br><br>By automating the preliminary merchant analysis, the margin of error is reduced, and the decision-making process is improved, resulting in better profitability and service quality.<br><br>",
       },
     ],
   },
