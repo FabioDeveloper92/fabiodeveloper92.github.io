@@ -224,7 +224,7 @@ export const projectsContent = [
       it: "Applicazione per la gestione della vendita di gioielli, con carrello, pagamenti e area amministrativa.",
       en: "Application for managing jewelry sales, with shopping cart, payments, and admin area.",
     },
-    technologies: ["ASP.NET", ".NET", "MSSQL"],
+    technologies: ["ASP.NET", ".NET", "MSSQL", "Microservices", "TDD"],
     slug: "miluna",
   },
   {
