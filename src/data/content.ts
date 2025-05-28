@@ -269,7 +269,7 @@ export const projectsContent = [
       it: "Applicazione web per la gestione / organizzazione / decisione di tutti i sondaggi in SBB.",
       en: "Web application for the handling / organization / decision of all the meetings in the SBB.",
     },
-    technologies: ["Angular 5", ".NET", "MSSQL"],
+    technologies: ["Angular 5", "NGRX", ".NET", "MSSQL", "Azure", "DDD", "CQRS", "MediaTR", "TDD"],
     slug: "sbb-surveys",
   },
   {
@@ -332,135 +332,6 @@ export const projectsContent = [
 export const getProjectBySlug = (slug: string) => {
   return projectsContent.find((project) => project.slug === slug);
 };
-
-export const projectsData = [
-  {
-    id: 1,
-    titleKey: "project.ecommerce.title",
-    category: "Web Development",
-    categoryKey: "category.webDevelopment",
-    image:
-      "https://images.unsplash.com/photo-1520333789090-1afc82db536a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    slug: "e-commerce-platform",
-    descriptionKey: "project.ecommerce.description",
-    year: "2023",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
-    client: {
-      en: "Clothing Company",
-      it: "Azienda di Abbigliamento",
-    },
-    duration: {
-      en: "4 months",
-      it: "4 mesi",
-    },
-    fullDescriptionKey: "project.ecommerce.fullDescription",
-  },
-  {
-    id: 2,
-    titleKey: "project.taskManagement.title",
-    category: "Web Application",
-    categoryKey: "category.webApplication",
-    image:
-      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    slug: "task-management-app",
-    descriptionKey: "project.taskManagement.description",
-    year: "2022",
-    technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
-    client: {
-      en: "Consulting Company",
-      it: "Azienda di Consulenza",
-    },
-    duration: {
-      en: "3 months",
-      it: "3 mesi",
-    },
-    fullDescriptionKey: "project.taskManagement.fullDescription",
-  },
-  {
-    id: 3,
-    titleKey: "project.healthcare.title",
-    category: "Enterprise Solution",
-    categoryKey: "category.enterpriseSolution",
-    image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    slug: "healthcare-portal",
-    descriptionKey: "project.healthcare.description",
-    year: "2023",
-    technologies: [".NET Core", "SQL Server", "Angular", "Azure"],
-    client: {
-      en: "Private Clinics Network",
-      it: "Network di Cliniche Private",
-    },
-    duration: {
-      en: "6 months",
-      it: "6 mesi",
-    },
-    fullDescriptionKey: "project.healthcare.fullDescription",
-  },
-  {
-    id: 4,
-    titleKey: "project.realEstate.title",
-    category: "Web Platform",
-    categoryKey: "category.webPlatform",
-    image:
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    slug: "real-estate-marketplace",
-    descriptionKey: "project.realEstate.description",
-    year: "2022",
-    technologies: ["React", "Django", "PostgreSQL", "Google Maps API"],
-    client: {
-      en: "Real Estate Agency",
-      it: "Agenzia Immobiliare",
-    },
-    duration: {
-      en: "5 months",
-      it: "5 mesi",
-    },
-    fullDescriptionKey: "project.realEstate.fullDescription",
-  },
-  {
-    id: 5,
-    titleKey: "project.socialMedia.title",
-    category: "Analytics",
-    categoryKey: "category.analytics",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    slug: "social-media-dashboard",
-    descriptionKey: "project.socialMedia.description",
-    year: "2023",
-    technologies: ["React", "D3.js", "Node.js", "MongoDB"],
-    client: {
-      en: "Marketing Agency",
-      it: "Agenzia di Marketing",
-    },
-    duration: {
-      en: "3 months",
-      it: "3 mesi",
-    },
-    fullDescriptionKey: "project.socialMedia.fullDescription",
-  },
-  {
-    id: 6,
-    titleKey: "project.banking.title",
-    category: "Mobile Development",
-    categoryKey: "category.mobileDevelopment",
-    image:
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    slug: "mobile-banking-app",
-    descriptionKey: "project.banking.description",
-    year: "2022",
-    technologies: ["React Native", "Redux", "Node.js", "PostgreSQL"],
-    client: {
-      en: "Financial Services Company",
-      it: "Azienda di Servizi Finanziari",
-    },
-    duration: {
-      en: "4 months",
-      it: "4 mesi",
-    },
-    fullDescriptionKey: "project.banking.fullDescription",
-  },
-];
 
 // Project full descriptions with HTML content
 export const projectFullDescriptions = {
@@ -561,8 +432,70 @@ export const projectFullDescriptions = {
     ],
   },
   "sbb-surveys": {
-    it: [],
-    en: [],
+    it: [
+      {
+        title: "Il Progetto",
+        body: `SSB Surveys è un'applicazione web ideata per semplificare e potenziare la gestione dei sondaggi all'interno della rete ferroviaria svizzera.<br><br>
+    L'obiettivo era ambizioso: creare una piattaforma in grado di generare quattro diverse tipologie di sondaggi, associarli a gruppi mirati di utenti e gestire l'intero ciclo di comunicazione e notifica.<br><br>
+    Il sistema prevede l'invio automatico di notifiche push all'apertura di un nuovo sondaggio, email per la comunicazione dei risultati, e reminder di voto 48 e 24 ore prima della scadenza. Il progetto ha rappresentato una sfida entusiasmante, trasformando un processo manuale e disomogeneo in un flusso digitale fluido, efficiente e completamente automatizzato.`,
+      },
+      {
+        title: "Sfide Affrontate",
+        body: `Per realizzare SSB Surveys è stato necessario progettare un'architettura solida, capace di sostenere un sistema in continua evoluzione e con requisiti molto specifici.<br><br>
+    Abbiamo curato con attenzione l'interfaccia utente per renderla semplice, intuitiva e utilizzabile anche da operatori con scarsa familiarità con strumenti digitali.<br><br>
+    La gestione degli utenti è stata integrata tramite Azure AD, assicurando sicurezza e immediatezza nell'autenticazione. Un'altra sfida significativa è stata l'integrazione con un sistema terzo, deputato a ricevere e registrare i dati al termine della votazione in modo trasparente e affidabile.`,
+      },
+      {
+        title: "Soluzioni Tecniche",
+        body: `Per la parte frontend è stato scelto <strong>Angular 5</strong>, una tecnologia solida che ha permesso di costruire un’interfaccia dinamica e reattiva, capace di adattarsi perfettamente alle esigenze dell’utente finale.<br><br>
+    Il backend è stato sviluppato in <strong>.NET</strong>, seguendo i principi di <strong>Domain-Driven Design (DDD)</strong> e <strong>CQRS (Command Query Responsibility Segregation)</strong> per garantire una separazione chiara delle responsabilità, scalabilità e manutenibilità nel tempo.<br><br>
+    Fondamentale è stata anche l’integrazione con <strong>Azure</strong>, dove l'applicazione viene pubblicata automaticamente al termine della pipeline di test: una soluzione che ha reso il deploy continuo, affidabile e immediato.`,
+      },
+      {
+        title: "Risultati",
+        body: `Il risultato è stato un sistema stabile, intuitivo e perfettamente integrato con l’infrastruttura IT di SSB.<br><br>
+    Gli operatori hanno finalmente potuto gestire in autonomia i sondaggi e le comunicazioni, risparmiando tempo e migliorando la precisione nella raccolta delle opinioni.<br><br>
+    Il flusso delle notifiche ha aumentato significativamente il tasso di risposta, mentre la segmentazione degli utenti ha permesso di ottenere dati più mirati e di valore. Il progetto è stato accolto con entusiasmo sia dagli utenti interni che dal committente.`,
+      },
+      {
+        title: "Conclusione",
+        body: `SSB Surveys non è solo un’applicazione per gestire sondaggi: è una piattaforma moderna, pensata per semplificare e valorizzare il coinvolgimento degli operatori nella rete ferroviaria.<br><br>
+    Lavorarci è stato stimolante, grazie alle sfide tecniche affrontate, alla varietà degli aspetti gestiti e alla soddisfazione di vederne l’impatto diretto sul lavoro quotidiano di decine di utenti reali.<br><br>
+    Un progetto che dimostra quanto la tecnologia, se progettata con passione e metodo, possa davvero fare la differenza.`,
+      },
+    ],
+    en: [
+      {
+        title: "The Project",
+        body: `SSB Surveys is a web application designed to simplify and enhance the management of surveys within the Swiss railway network.<br><br>
+    The goal was ambitious: to build a platform capable of generating four different types of surveys, assigning them to specific user groups, and handling the full cycle of communication and notification.<br><br>
+    The system automatically sends push notifications when a new survey opens, emails with final results, and vote reminders 48 and 24 hours before the deadline. This project turned a manual and inconsistent process into a smooth, efficient, and fully automated digital workflow—something truly exciting to build.`,
+      },
+      {
+        title: "Challenges Faced",
+        body: `To realize SSB Surveys, we needed to design a robust architecture capable of supporting a growing system with very specific requirements.<br><br>
+    We paid great attention to the user interface, aiming for a clean and intuitive design accessible even to non-technical staff.<br><br>
+    User authentication was integrated through Azure AD to ensure both security and ease of access. One major challenge was also integrating with a third-party system responsible for receiving and registering voting results transparently and reliably.`,
+      },
+      {
+        title: "Technical Solutions",
+        body: `For the frontend, we chose <strong>Angular 5</strong>, a powerful framework that allowed us to build a responsive and interactive interface tailored to the end user's needs.<br><br>
+    The backend was developed using <strong>.NET</strong>, with <strong>Domain-Driven Design (DDD)</strong> and <strong>CQRS (Command Query Responsibility Segregation)</strong> principles to ensure clean architecture, scalability, and long-term maintainability.<br><br>
+    A key component was the integration with <strong>Azure</strong>, where the application is automatically deployed after successful test pipelines—bringing continuous, reliable, and fast delivery to life.`,
+      },
+      {
+        title: "Results",
+        body: `The final outcome was a stable, user-friendly system, perfectly integrated with SSB’s IT infrastructure.<br><br>
+    Operators were finally able to manage surveys and communications independently, saving time and increasing accuracy in collecting responses.<br><br>
+    The notification flow significantly boosted participation rates, while user segmentation allowed for more targeted and valuable insights. The system was well-received both by internal users and the client.`,
+      },
+      {
+        title: "Conclusion",
+        body: `SSB Surveys is more than just a survey management app—it's a modern platform designed to simplify and enhance engagement across the railway workforce.<br><br>
+    Working on it was deeply rewarding, filled with technical challenges, user-focused design, and the gratification of seeing real-world impact on a daily basis.<br><br>
+    This project proves how technology, when built with passion and precision, can truly make a difference.`,
+      },
+    ],
   },
   "trovaprezzi-profiler": {
     it: [

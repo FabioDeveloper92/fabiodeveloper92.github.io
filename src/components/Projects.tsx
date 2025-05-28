@@ -82,9 +82,9 @@ const Projects = () => {
             className="border-primary text-primary hover:bg-primary/10"
             asChild
           >
-            <a href="/projects" onClick={handleViewAllProjects}>
+            <Link to="/projects" onClick={handleViewAllProjects}>
               {t("projects.viewAll")}
-            </a>
+            </Link>
           </Button>
         </div>
       </div>

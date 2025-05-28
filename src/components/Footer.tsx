@@ -5,12 +5,9 @@ import {
   Github,
   Twitter,
   Instagram,
-  ExternalLink,
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { socialLinks } from "@/data/socialLinks";
-import { contactData } from "@/data/contactData";
-import { navLinks } from "@/data/navLinks";
 
 const Footer = () => {
   const { t } = useLanguage();
